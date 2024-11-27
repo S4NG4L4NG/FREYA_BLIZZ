@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FREYA_BLIZZ.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FREYA_BLIZZ"
+    xmlns:views="clr-namespace:FREYA_BLIZZ.View"
+    Shell.FlyoutBehavior="Disabled"
+    Title="FREYA_BLIZZ">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+     Title="Home"
+     ContentTemplate="{DataTemplate views:StudentView}"
+     Route="StudentView" />
+
+</Shell>
